@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Digital;
+    src: url(../fonts/digital/DS-DIGI.TTF);
+}
+
+:root {
+    --color-primary: #5485bc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+body {
+    background-color: rgb(43, 40, 40);
+}
+
+main {
+    max-width: 1920vw;
+    max-height: 1080px;
+    height: 1080px;
+    overflow: hidden;
+
+    margin: 8px 0;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+h1 {
+    color: var(--color-primary);
+    display: inline;
+    font-size: 3.5em;
+    margin: 0;
+
+
+}
+
+.section_timer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+
+}
+
+.section_timer img {
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+#timer-content {
+    color: var(--color-primary);
+    font-family: Digital;
+    font-size: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+#timer-content span {
+    width: 78.4px;
+}
+
+#timer-separator {
+    display: inline;
+    width: 50px !important;
+    text-align: center;
+}
+
+#dialog {
+    display: block;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+#timer_prams {
+    height: 60px;
+}
+
+
+#carousel {
+    width: 100vw;
+    overflow: hidden;
+
+
+}
+
+
+.carrouselle .item {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.timer_info {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-family: Digital;
+    text-align: center;
+    margin-top: 28px;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.form-timer {
+    background-color: whitesmoke;
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    top: calc(50% - 40%);
+    left: calc(50% - 20%);
+
+}
+
+.form-timer h6 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-family: Digital;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.form-timer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 2rem;
+    font-family: Digital;
+    text-align: center;
+    margin-top: 28px;
+    border: #5485bc 1px solid;
+    border-radius: 10px;
+}
+
+.form-timer input[type="submit"] {
+    background-color: var(--color-primary);
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: Digital;
+    text-align: center;
+    margin-top: 28px;
+    border: #5485bc 1px solid;
+    border-radius: 10px;
+}
